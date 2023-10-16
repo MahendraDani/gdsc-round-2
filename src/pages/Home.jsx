@@ -6,11 +6,13 @@ import Footer from "../components/footer/Footer";
 
 const Home = () => {
   return (
-    <Stack direction={"column"}>
-      <Navbar />
-      <Landing />
-      <Footer />
-    </Stack>
+    <div className="bg-gradient-to-br from-[#edece2] via-[#d1e3fd] to-[#f3e5df]">
+      <Stack direction={"column"}>
+        <Navbar />
+        <Landing />
+        <Footer />
+      </Stack>
+    </div>
   );
 };
 
