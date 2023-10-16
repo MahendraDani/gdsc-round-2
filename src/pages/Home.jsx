@@ -1,12 +1,14 @@
 import React from "react";
 import Navbar from "../components/navbar/Navbar";
-import { Box } from "@mui/material";
+import { Box, Stack } from "@mui/material";
+import Landing from "../components/Landing";
 
 const Home = () => {
   return (
-    <Box>
+    <Stack direction={"column"}>
       <Navbar />
-    </Box>
+      <Landing />
+    </Stack>
   );
 };
 
