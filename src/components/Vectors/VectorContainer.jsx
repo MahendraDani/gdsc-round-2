@@ -1,12 +1,13 @@
-import { Container, Stack, Typography } from "@mui/material";
+import { Container, Paper, Stack, Typography } from "@mui/material";
 import React from "react";
 import VectorTypes from "./VectorTypes";
-import { Bookmarks, Sort } from "@mui/icons-material";
+import VectorIcons from "./VectorIcons";
+import VectorCards from "./VectorCards";
 
 const VectorContainer = () => {
   return (
     <Container>
-      <Stack direction={"cloumn"}>
+      <Stack direction={"column"} gap={2}>
         <Stack
           direction={"row"}
           sx={{
@@ -16,18 +17,9 @@ const VectorContainer = () => {
           }}
         >
           <VectorTypes />
-          <Stack
-            direction={"row"}
-            sx={{
-              justifyContent: "start",
-              alignItems: "center",
-              gap: 2,
-            }}
-          >
-            <Sort sx={{ fontSize: 15, cursor: "pointer" }} />
-            <Bookmarks sx={{ fontSize: 15, cursor: "pointer" }} />
-          </Stack>
+          <VectorIcons />
         </Stack>
+        <VectorCards />
       </Stack>
     </Container>
   );
