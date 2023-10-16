@@ -32,7 +32,7 @@ const MobileNav = () => {
 
   return (
     <Box>
-      <Box onClick={handleShowMobileNav}>
+      <Box onClick={handleShowMobileNav} sx={{ cursor: "pointer" }}>
         <Menu />
       </Box>
       {showMobileNav && (

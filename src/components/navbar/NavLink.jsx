@@ -7,6 +7,7 @@ const NavLink = ({ name, to }) => {
     <Link to={to}>
       <Typography
         sx={{
+          fontFamily: "Poppins",
           ":hover": {
             color: "blue.main",
           },
