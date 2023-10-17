@@ -10,14 +10,22 @@ const Content = () => {
       <Typography
         variant="h3"
         fontFamily={"Poppins,sans-serif"}
-        sx={{ color: "black.main", display: { xs: "none", md: "block" } }}
+        sx={{
+          color: "black.main",
+          display: { xs: "none", md: "block" },
+          textAlign: "center",
+        }}
       >
         Popular Pro Stock Images
       </Typography>
       <Typography
         variant="h4"
         fontFamily={"Poppins,sans-serif"}
-        sx={{ color: "black.main", display: { xs: "block", md: "none" } }}
+        sx={{
+          color: "black.main",
+          display: { xs: "block", md: "none" },
+          textAlign: "center",
+        }}
       >
         Popular Pro Stock Images
       </Typography>
